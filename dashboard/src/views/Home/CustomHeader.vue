@@ -27,7 +27,7 @@
                     felizes!
                 </h1>
                 <p class="text-lg font-medium text-white">
-                    Receba ideias, reclamações e feedbacs com um <br class="hidden lg:inline-block">
+                    Receba ideias, reclamações e feedbacks com um <br class="hidden lg:inline-block">
                     simples widget na página.
                 </p>
                 <div>
