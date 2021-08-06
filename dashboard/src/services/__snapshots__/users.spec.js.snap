@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UsersService should generate api key 1`] = `
+Object {
+  "data": Object {
+    "apiKey": "9999.7777.9012",
+  },
+}
+`;
+
+exports[`UsersService should return data from user 1`] = `
+Object {
+  "data": Object {
+    "apiKey": "1234.5678.9012",
+    "createdAt": "1599264000000",
+    "email": "teste@email.com",
+    "id": "99998888",
+    "name": "Teste",
+  },
+}
+`;

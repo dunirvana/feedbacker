@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeedbacksService should return all feedbacks 1`] = `
+Object {
+  "data": Array [
+    Object {
+      "createAt": "1608681600000",
+      "id": "1234",
+      "text": "Feedback 1",
+      "type": "IDEA",
+    },
+    Object {
+      "createAt": "1605225600000",
+      "id": "56789",
+      "text": "Feedback 2",
+      "type": "OTHER",
+    },
+  ],
+}
+`;
+
+exports[`FeedbacksService should return feedbacks summary 1`] = `
+Object {
+  "data": Object {
+    "all": "2",
+    "idea": "4",
+    "issue": "3",
+    "other": "5",
+  },
+}
+`;
