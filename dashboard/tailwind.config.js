@@ -1,8 +1,10 @@
 const colors = require('tailwindcss/colors')
 const pallete = require('./pallete')
+const colorVars = require('tailwind-color-vars')
 
 module.exports = {
   purge: [],
+  presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -966,5 +968,14 @@ module.exports = {
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus'],
   },
-  plugins: [],
+  plugins: [
+    colorVars({
+      colors: {
+        'primary': 'rgba(0, 80, 200, 0.7)',
+        'black': 'black',
+      },
+      // default value, this will give passed values priority
+      strategy: 'override',  
+    }),
+  ],
 }
