@@ -3,7 +3,6 @@ const pallete = require('./pallete')
 
 module.exports = {
   purge: [],
-  presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
