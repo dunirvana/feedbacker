@@ -7,7 +7,7 @@ import FeedbacksService from './feedbacks'
 
 const API_ENVS = {
   production: 'https://backend-treinamento-vue3-eight.vercel.app/',
-  development: '',
+  development: 'http://localhost:3000',
   local: 'http://localhost:3000'
 }
 

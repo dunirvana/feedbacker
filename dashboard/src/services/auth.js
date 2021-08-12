@@ -8,6 +8,7 @@ export default httpClient => ({
     let errors = null
 
     if (!response.data) {
+      console.log('auth.register', response.data)
       errors = {
         status: response.request.status,
         statusText: response.request.statusText
