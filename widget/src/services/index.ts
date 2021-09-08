@@ -1,9 +1,8 @@
 import axios from 'axios'
-import FeedbacksService from './feedbacks'
 
 const API_ENVS = {
-  production: 'https://backend-treinamento-vue3.vercel.app',
-  development: '',
+  production: 'https://backend-treinamento-vue3-eight.vercel.app/',
+  development: 'http://localhost:3000',
   local: 'http://localhost:3000'
 }
 
@@ -14,8 +13,7 @@ const httpClient = axios.create({
 httpClient.interceptors.response.use((response) => {
   return response
 }, (error) => {
-  const canThrowAnError = error.request.status === 0 ||
-    error.request.status === 500
+  const canThrowAnError = error.request.status === 0 || error.request.status === 500
 
   if (canThrowAnError) {
     throw new Error(error.message)
@@ -25,5 +23,4 @@ httpClient.interceptors.response.use((response) => {
 })
 
 export default {
-  feedbacks: FeedbacksService(httpClient)
 }
